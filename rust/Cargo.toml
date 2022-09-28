@@ -1,0 +1,6 @@
+[workspace]
+
+members = [
+  "get-config",
+  "get-config-wasm"
+]

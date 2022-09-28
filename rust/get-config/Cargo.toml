@@ -1,0 +1,17 @@
+[package]
+name = "get-config"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[features]
+wasm = ["wasm-bindgen", "tsify"]
+
+[dependencies]
+serde = { version = "1.0.144", features = ["derive"] }
+serde_json = { version = "1.0.85" }
+
+# optional dependencies
+tsify = { version = "0.4.2", optional = true, features = ["json"] }
+wasm-bindgen = { version = "0.2.83", optional = true, features = ["serde-serialize"] }
